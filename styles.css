@@ -1,0 +1,239 @@
+:root{
+    --bg-mena:#122255;
+    --bg-sec: white;
+    --bg-red:#a42634;
+    --tx-mena: white ;
+    --text-red:#a42634; 
+    --bg-gray : linear-gradient(0deg, #c1c7cd 0%,#fafafa 100%);
+    --tx-black: black;
+    --txb-mena:#122255;
+
+}
+
+.big-header{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--txb-mena);
+}
+
+.my-min-h{
+    height: 300px;
+}
+.my-bg-mena{
+ background-color: var(--bg-mena);
+}
+.my-bg-white{
+ background-color: var(--bg-sec);
+}
+
+.my-tx-color{
+color: var(--tx-mena);
+}
+.my-tx-red{
+    color: var(--text-red);
+}
+.my-tx-mena{
+ color:var(--txb-mena);
+}
+
+
+.top-bar.navbar{
+    position: relative;
+    background-color:var(--bg-gray);
+    color: var(--tx-mena);
+    font-weight: 800;
+    font-size: 20px;
+    
+}
+    
+
+
+.nav-bar.nav-sticky{
+    position: stick;
+    width: -webkit-fill-available;
+    background-color: var(--bg-mena);
+    /* color:var(--tx-mena) ; */
+    transition: all 5s;
+    box-shadow: 0 2px 5px rgb(0, 0, 0/ 30%);
+    padding-top: 20px;
+    z-index: 999;
+}
+
+.nav-bar.nav-sticky button:hover{
+   background-color: var(--text-red);
+   transition: color .15s ease-in-out, backgroound-color var(--text-red) .15 ease-in-out;
+   text-decoration:underline;
+}
+
+     /* end of navbar */
+
+     /*carosalo section  */
+.bg-slide-header-1{
+   background-image:url( "img/carousel-1.jpg");
+   background-size: cover;
+   background-position: center right;
+}
+
+.bg-slide-header-2{
+   background-image:url('img/carousel-2.jpg');
+    background-size: cover; 
+    background-position: center right; 
+}
+
+.bg-slide-header-3{
+  background-image:url('img/carousel-3.jpg');
+  background-size: cover;
+  background-position: center right;
+}
+
+.carousel .carousel-text{
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   z-index: 2;
+   max-width: 799;
+}
+
+.carousel .carousel-text h2{
+    font-size: 90px;
+    font-weight: 600;
+}
+
+   /* end carosalo section  */
+
+     /* about section */
+.about{
+    position: relative;
+    height: 500px;
+    width: 100%;
+    padding: 45px 0 15px 20px;
+}
+
+
+
+
+.about-header{
+    height: 300px;
+    width:-webkit-fill-available ;
+    background-color: var(--bg-mena);
+    /* justify-content: center; */
+
+}
+
+.about-header h2{
+    font-size: 90px;
+    font-weight: 600;
+}
+
+.about button{
+  background-color: var(--text-red);
+}
+
+.about button:hover{
+background-color: var(--bg-mena);
+color:var(--tx-mena);
+}
+
+.about-img{
+   background-image:url('./img/about.jpg');
+   background-size: cover;  
+}
+
+.about ul{
+ list-style: none;
+ margin: 0;
+ padding: 0;
+ margin-bottom: 20px;
+}  
+
+.about h2 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+
+/* price section */
+.price{
+    height:600px;
+    /* background-color: var(--bg-sec); */
+    color: var(--txb-mena);
+}
+
+.price h2 {
+    font-size: 50px;
+    font-weight: 600;
+    
+}
+
+.price .row{
+  margin-right: 15px;
+  margin-left: 15px;
+}
+ .price-body span{
+ font-size: 20px;
+ color: var(--txb-mena);
+}
+.price button:hover{
+ background-color: var(--bg-mena);
+ color: var(--txb-mena);
+}
+
+/* .price-prem.price-title {
+    color: var(--text-red);
+    border-radius: none;
+    
+} */
+
+.price-prem span{
+    font-size: 20px;
+    color: var(--text-red);
+}
+
+.price-prem button{
+ background: var(--bg-red);
+ color: var(--bg-mena);
+}
+
+.price-prem button:hover{
+ background: var(--bg-mena);
+ color: var(--tx-mena);
+ 
+}
+
+.price .price-items{
+    border-radius:rouned ;
+    box-shadow:1px 1px  1px 1px;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    
+}
+.price-prem{
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 2px 2px 8px 6px rgb(223, 37, 78);
+    
+}
+
+  /* services section */
+.services {
+    position: relative;
+    margin-top: 45px;
+}
+
+
+
+
+
+@media (max-width: 576px){
+    .about {
+      display: flex;
+      /* align-items: flex-start; */
+    }
+}
+
+
+
+
